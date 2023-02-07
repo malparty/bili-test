@@ -21,6 +21,9 @@ eslint.lint
 # Runs Stylelint on all files
 stylelint.lint
 
+# Runs slim-lint on modified and added files in the PR
+slim_lint.lint
+
 # Report your Ruby app test suite code coverage in Danger.
 # Copied from the report method to fix the wrong method called on line:31
 # https://github.com/marcelofabri/danger-simplecov_json/blob/master/lib/simplecov_json/plugin.rb#L31

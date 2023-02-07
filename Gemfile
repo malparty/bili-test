@@ -16,8 +16,16 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby] # Windows doe
 # gem 'kredis' # Use Kredis to get higher-level data types in Redis
 # gem 'bcrypt' # Use Active Model has_secure_password
 
+# Hotwire
+gem 'turbo-rails' # Hotwire's SPA-like page accelerator
+gem 'stimulus-rails' # Hotwire's modest JavaScript framework
+
 # Authentications & Authorizations
+gem 'devise' # Authentication solution for Rails with Warden
 gem 'pundit' # Minimal authorization through OO design and pure Ruby classes
+
+# Templating
+gem 'slim' # light weight template engine
 
 # Assets
 gem 'sprockets-rails' # The original asset pipeline for Rails
@@ -26,8 +34,10 @@ gem 'jsbundling-rails' # Bundle and transpile JavaScript
 # gem 'image_processing' # Use Active Storage variants
 
 # Translations
+# gem 'devise-i18n' # Translations for Devise
 # gem 'rails-i18n', '~> 6.0.0' # Translations for Rails
 gem 'i18n-js', '3.9.0' # A library to provide the I18n translations on the Javascript
+# gem 'devise-i18n' # Translations for Devise
 
 group :development do
   gem 'foreman' # Manage Procfile-based applications
@@ -67,6 +77,7 @@ group :development, :test do
   gem 'rubocop-performance', require: false # An extension of RuboCop focused on code performance checks.
   gem 'undercover' # Report missing test coverage in new changes
   gem 'danger' # Automated code review.
+  gem 'danger-slim_lint' # Lint slim files.
   gem 'danger-eslint' # ESLint
   gem 'danger-stylelint' # Stylelint
   gem 'danger-rubocop' # A Danger plugin for Rubocop.
